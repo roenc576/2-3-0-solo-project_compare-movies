@@ -161,19 +161,19 @@ In order to see how well you're doing with this project, here are all the things
 Something new is that the fixed height of the movies display container needs a `tabindex="0"` attribute on the list. That allows a keyboard only user to tab into it, and then control scrolling with the space/arrow keys. Here is more [information about tabindex and keyboard scrolling](https://accessibilityinsights.io/info-examples/web/scrollable-region-focusable/)
 
 ## Layout: Structure
-- [ ] There is a single `main` element on the page
-- [ ] There is a single `h1` element on the page
-- [ ] There is a `form`
-- [ ] The form has an `h2` label
-- [ ] The form has an `text` input and label for the movie title
-- [ ] The form has an `number` input and label for the movie's critic score
-- [ ] The form has an `number` input and label for the movie's audience score
-- [ ] The form has an `number` input and label for the movie's domestic gross
-- [ ] The form has a `select` input and label for the movie's genre with options:
+- [ x ] There is a single `main` element on the page
+- [ x ] There is a single `h1` element on the page
+- [ x ] There is a `form`
+- [ x ] The form has an `h2` label
+- [ x ] The form has an `text` input and label for the movie title
+- [ x ] The form has an `number` input and label for the movie's critic score
+- [ x ] The form has an `number` input and label for the movie's audience score
+- [ x ] The form has an `number` input and label for the movie's domestic gross
+- [ x ] The form has a `select` input and label for the movie's genre with options:
   - ['Action', 'Adventure', 'Comedy', 'Drama', 'Horror', 'Concert', 'Documentary', 'Musical', 'Romance', 'Sci-Fi', 'Thriller']
-- [ ] The `select` input starts with "Select a genre" with *no* value
-- [ ] Every single input on the form is required in the html
-- [ ] The form has a `button` to submit the form
+- [ x ] The `select` input starts with "Select a genre" with *no* value
+- [ x ] Every single input on the form is required in the html
+- [ x ] The form has a `button` to submit the form
 - [ ] There is an `h2` showing for every section of the page
 - [ ] There are actual `section` tags to denote each section
 - [ ] There is a `button` under the `ul` to reset the movies to the default movies
@@ -184,17 +184,17 @@ Something new is that the fixed height of the movies display container needs a `
 - [ ] There is a third chart using Chart.js
 
 ## layout: Accessibility
-- [ ] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
+- [ x ] The form has an `aria-label` or `aria-labelledby` attribute that describes the form
 - [ ] Each section has an `aria-label` or `aria-labelledby` attribute that describes the section
 - [ ] There are no instances of recreating any semantic elements
 - [ ] There is a tab index on the scrollable movies section
 - [ ] Each movie card has an `h3` with the movies title so they can easily be identified and navigated to by screen readers
 
 ## Functionality
-- [ ] Every form field is required, and the form cannot be submitted without them
+- [ x ] Every form field is required, and the form cannot be submitted without them
 - [ ] Clicking the form submit button does not reload the page because the default behavior is prevented
 - [ ] Clicking the form submit button creates a new movie in the movies section
-- [ ] Clicking the form submit button clears the form
+- [ x ] Clicking the form submit button clears the form
 - [ ] When a movie is added, all charts are rerendered to show the new movie
 - [ ] At least one chart has a modified tooltip display
 - [ ] Clicking the reset button removes all user added movies and resets the movies to the default list
@@ -202,7 +202,7 @@ Something new is that the fixed height of the movies display container needs a `
 - [ ] The movies are loaded from localStorage on page load
 
 ## Meta
-- [ ] The project is created using Vite
+- [ x ] The project is created using Vite
 - [ ] The code exists in more than one JS file
 - [ ] The project is deployed via GitHub Pages properly
 - [ ] The `movie-data.json` file is read properly

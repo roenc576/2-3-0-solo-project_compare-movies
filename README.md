@@ -176,8 +176,8 @@ Something new is that the fixed height of the movies display container needs a `
 - [ x ] The form has a `button` to submit the form
 - [ ] There is an `h2` showing for every section of the page
 - [ ] There are actual `section` tags to denote each section
-- [ ] There is a `button` under the `ul` to reset the movies to the default movies
-- [ ] The movies are each in `li` elements inside a `ul` element
+- [ x ] There is a `button` under the `ul` to reset the movies to the default movies
+- [ x ] The movies are each in `li` elements inside a `ul` element
 - [ ] The movies are displayed in a grid-like pattern (flex or grid)
 - [ ] There is a bar chart using Chart.js
 - [ ] There is a second chart using Chart.js
@@ -188,27 +188,27 @@ Something new is that the fixed height of the movies display container needs a `
 - [ ] Each section has an `aria-label` or `aria-labelledby` attribute that describes the section
 - [ ] There are no instances of recreating any semantic elements
 - [ ] There is a tab index on the scrollable movies section
-- [ ] Each movie card has an `h3` with the movies title so they can easily be identified and navigated to by screen readers
+- [ x ] Each movie card has an `h3` with the movies title so they can easily be identified and navigated to by screen readers
 
 ## Functionality
 - [ x ] Every form field is required, and the form cannot be submitted without them
-- [ ] Clicking the form submit button does not reload the page because the default behavior is prevented
-- [ ] Clicking the form submit button creates a new movie in the movies section
+- [ x ] Clicking the form submit button does not reload the page because the default behavior is prevented
+- [ x ] Clicking the form submit button creates a new movie in the movies section
 - [ x ] Clicking the form submit button clears the form
-- [ ] When a movie is added, all charts are rerendered to show the new movie
+- [ x ] When a movie is added, all charts are rerendered to show the new movie
 - [ ] At least one chart has a modified tooltip display
-- [ ] Clicking the reset button removes all user added movies and resets the movies to the default list
-- [ ] The movies are saved to localStorage
-- [ ] The movies are loaded from localStorage on page load
+- [ x ] Clicking the reset button removes all user added movies and resets the movies to the default list
+- [ x ] The movies are saved to localStorage
+- [ x ] The movies are loaded from localStorage on page load
 
 ## Meta
 - [ x ] The project is created using Vite
-- [ ] The code exists in more than one JS file
+- [ x ] The code exists in more than one JS file
 - [ ] The project is deployed via GitHub Pages properly
-- [ ] The `movie-data.json` file is read properly
+- [ x ] The `movie-data.json` file is read properly
 - [ ] css flexbox or grid was used
 - [ ] The code does not render unescaped text directly to the DOM (`createElement`` or other escape method used)
-- [ ] `.innerHTML` or `createElement/.append` is used properly at some point in the project
+- [ x ] `.innerHTML` or `createElement/.append` is used properly at some point in the project
 - [ ] `.innerHTML` or `.remove()` is used to delete elements from the DOM.
 
 

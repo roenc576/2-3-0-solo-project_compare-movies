@@ -1,1 +1,92 @@
-:3
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/2-3-0-solo-project_compare-movies/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    
+    <script type="module" crossorigin src="/2-3-0-solo-project_compare-movies/assets/index-BVfiUK6b.js"></script>
+    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_compare-movies/assets/index-zTM6fopw.css">
+  </head>
+  <body>
+    <div id="app">
+      <main>
+
+        <h1>MovieStacks</h1>
+
+          <section id="movies-section">
+            <div id="movie-form-div" class="card">
+              <div class="container">
+                <form id="new-movie-form" aria-labelledby="form-heading">
+            
+                  <h2 id="form-heading">Add Your Movie</h2>
+            
+                  <div class="input">
+                    <label for="movie-title">Movie Title:</label>
+                    <input type="text" name="title" id="movie-title" placeholder="Movie Title" required>
+                  </div>
+
+                  <div>
+                    <label for="critic-score">Critic Score:</label>
+                    <input type="number" name="criticScore" id="critic-score" required>
+                  </div>
+            
+                  <div class="input">
+                    <label for="audience-score">Audience Score:</label>
+                    <input type="number" name="audienceScore" id="audience-score" required>
+                  </div>
+            
+                  <div class="input">
+                    <label for="domestic-gross">Domestic Gross Sales:</label>
+                    <input type="number" name="domestic" id="domestic-gross" required>
+                  </div>
+                  <!-- create all these options in JavaScript; too much writing -->
+                  <!-- form shouldn't submit without an actual genre selected -->
+                  <div class="input">
+                    <label for="genre">Genre:</label>
+                    <select name="genre" id="genre">
+                      <option value="">Select a genre</option>
+                      <option value="Action">Action</option>
+                      <option value="Adventure">Adventure</option>
+                      <option value="Comedy">Comedy</option>
+                      <option value="Drama">Drama</option>
+                      <option value="Horror">Horror</option>
+                      <option value="Concert">Concert</option>
+                      <option value="Documentary">Documentary</option>
+                      <option value="Musical">Musical</option>
+                      <option value="Romance">Romance</option>
+                      <option value="Sci-Fi">Sci-Fi</option>
+                      <option value="Thriller">Thriller</option>
+                    </select>
+                  </div>
+            
+                  <button type="submit" id="submit">Add Movie</button>
+                </form>
+              </div>
+            </div>
+            <div id="movies-list-div">
+              <ul id="movies-list">
+              </ul>
+              <button type="button" id="reset">Go Back To Default Movies</button>
+            </div>
+          </section>
+          <section id="chart-section">
+            <div id="bar-chart">
+
+            </div>
+
+            <div id="doughnut-chart">
+
+            </div>
+
+            <div id="scatter-plot">
+
+            </div>
+          </section>
+
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>

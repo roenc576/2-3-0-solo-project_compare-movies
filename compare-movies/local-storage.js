@@ -21,11 +21,6 @@ export const getMovies = () => getLocalStorageKey('movies');
 
 export const addMovie = (movie) => setMovies([movie, ...getMovies()]);
 
-export const resetMovies = () => {
-  setMovies(initialMovies);
-  console.log(getMovies());
-};
-
 export const initMoviesIfEmpty = () => {
     if (!getMovies()) setMovies(initialMovies);
 

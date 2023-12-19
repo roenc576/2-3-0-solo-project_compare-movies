@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #040404;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -33,6 +34,15 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: left;
+}
+
+#movies-section {
+  display: flex;
+}
+
+#movie-form-div {
+  padding: 2rem;
 }
 
 .card {
@@ -41,43 +51,75 @@ h1 {
   background-color: #2e2d2d;
   transition: 0.3s;
   border-radius: 5px;
-  width: 25rem;
   text-align: left;
+  margin-right: 2rem;
+  height: 14rem;
 }
 
 .input {
   display: block;
+  white-space: nowrap;
 }
 
-
-
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 1rem;
-  
-}
-
-.container > :last-child {
-  margin-bottom: 1rem;
-}
-
 #movies-list-div {
-  display: inline;
+  padding: 2rem;
+  background-color: #2e2d2d;
+  flex-wrap: wrap;
+  max-width: 80rem;
+}
+
+#movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow: scroll;
+  max-height: 50vh;
+  min-width: 300px;
 }
 
 li {
   display: block;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #2e2d2d;
+  transition: 0.3s;
+  width: 15rem;
+  text-align: left;
+  padding: 1rem;
+  line-height: 5px;
 } 
 
+li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+#bar-chart {
+  margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.87);;
+}
+
+#doughnut-chart {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+@media (max-width: 480px) {
+
+  #movies-section {
+    display: flex;
+    flex-direction: column;
+  }
 }

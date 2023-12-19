@@ -3,9 +3,9 @@ import {
   getMovies,
   setMovies,
   addMovie,
-  resetMovies,
   initMoviesIfEmpty
 } from './local-storage.js';
+import { barChart, doughnutChart } from './chart.js'
 
 const renderMovies = () => {
   const movies = getMovies(); 
@@ -35,6 +35,9 @@ const renderMovies = () => {
     div.append(h3, criticScoreP, audienceScoreP, domesticP, genreP);
     moviesList.append(li);
   });
+
+  barChart();
+  doughnutChart();
 }
 
 const handleSubmit = (e) => {
@@ -54,16 +57,25 @@ const handleSubmit = (e) => {
   form.reset();
 }
 
+const resetMovies = () => {
+  
+  setMovies(null);
+ 
+  initMoviesIfEmpty();
+ 
+  renderMovies(); 
+};
+
 const main = () => {
   const form = document.querySelector("form"); 
   form.addEventListener("submit", handleSubmit);
 
   const resetButton = document.querySelector("#reset");
   resetButton.addEventListener("click", resetMovies);
-  resetButton.addEventListener("click", renderMovies);
 
   initMoviesIfEmpty();
   renderMovies();
+
 }
 
 main(); 

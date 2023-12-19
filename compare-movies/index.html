@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script type="module" src="/main.js"></script>
+    
   </head>
   <body>
     <div id="app">
@@ -23,6 +24,9 @@
                   <div class="input">
                     <label for="movie-title">Movie Title:</label>
                     <input type="text" name="title" id="movie-title" placeholder="Movie Title" required>
+                  </div>
+
+                  <div>
                     <label for="critic-score">Critic Score:</label>
                     <input type="number" name="criticScore" id="critic-score" required>
                   </div>
@@ -56,7 +60,7 @@
                     </select>
                   </div>
             
-                  <button type="submit">Add Movie</button>
+                  <button type="submit" id="submit">Add Movie</button>
                 </form>
               </div>
             </div>
@@ -66,7 +70,22 @@
               <button type="button" id="reset">Go Back To Default Movies</button>
             </div>
           </section>
+          <section id="chart-section">
+            <div id="bar-chart">
+
+            </div>
+
+            <div id="doughnut-chart">
+
+            </div>
+
+            <div id="scatter-plot">
+
+            </div>
+          </section>
+
       </main>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
